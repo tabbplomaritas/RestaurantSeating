@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- my styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Rubik:400,700,900" rel="stylesheet">
+<!-- material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+ <main>
+    <h1> 
+      <span id="headerMain"> Table Finder</span> 
+      <span id="headerSub">Pick Your Table Now</span> 
+    </h1>
+
+    <section id="floorPlan">
+      <div class="table available" id="1"><p>1</p></div>
+      <div class="table reserved" id="2"><p>2</p></div>
+      <div class="table available" id="3"><p>3</p></div>
+      <div class="table available" id="4"><p>4</p></div>
+      <div class="table available" id="5"><p>5</p></div>
+      <div class="table available" id="6"><p>6</p></div>
+      <div class="table available" id="7"><p>7</p></div>
+      <div class="table available" id="8"><p>8</p></div>
+      <div class="table available" id="9"><p>9</p></div>
+    </section>
+
+    <section id="resForm">
+        <i class="material-icons" id="closeFormButton">close</i>
+      <h2>New Reservation</h2>
+      <p>Table Number: <span id="tableNum"></span></p>
+      <input type="text" id="resName" placeholder="Name of Party">
+      <input type="text" id="resPhone" placeholder="Phone">
+      <input type="text" id="resPartySize" placeholder="Party Size">
+      <button type="button" id="saveButton">SAVE</button>
+
+      
+    </section>
+
+    <!-- this will pop up after save button on form is clicked to confirm the booking details -->
+    <section id="confirm">
+        <i class="material-icons" id="confirmCloseButton">close</i>
+      <h2>Reservation Confirmation</h2>
+      <p>You've Booked Table: <span id="confirmNum"></span></p>
+      <p id="confirmName"></p>
+      <p id="confirmPhone"></p>
+      <p id="confirmPartySize"></p>
+      
+      <!-- <button type="button" id="saveButton">SAVE</button> -->
+
+      
+    </section>
+
+ </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
